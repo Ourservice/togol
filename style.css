@@ -1,0 +1,32 @@
+.first {
+    color: blue;
+}
+.second {
+    color: red;
+}
+.third {
+    color: green;
+}
+.fourth {
+    color: yellow;
+}
+.fifth {
+    color: purple;
+}
+h1::selection {
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+}
