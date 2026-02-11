@@ -8,18 +8,47 @@
     <title>Togol</title>
 </head>
 <body>
+
     <div class="logo">T</div>
-    
-    <h1 class="header"><span class="first">T</span><span class="second">O</span><span class="third">G</span><span class="fourth">O</span><SPAN class="fifth">L</SPAN></h1>
-  <input type="text" placeholder="Search...">
-  <button onclick="search()">Search</button>
- <button id="example">Togol Search</button>
- <div id="lan"><p>Togol offered only in: </p><a id="english">English</a></div>
- <a href="" id="about">About</a>
 
- <a href="privacy.html" id="privacy">Privacy Policy</a>
+    <h1 class="header">
+        <span class="first">T</span>
+        <span class="second">O</span>
+        <span class="third">G</span>
+        <span class="fourth">O</span>
+        <span class="fifth">L</span>
+    </h1>
 
- <footer>&copy; 2026 TOGOL</footer>
-      
+    <input type="text" id="query" placeholder="Search...">
+
+    <button onclick="search()">Search</button>
+
+    <button id="example">Togol Search</button>
+
+    <div id="lan">
+        <p>Togol offered only in:</p>
+        <a id="english" href="#">English</a>
+    </div>
+
+    <a href="#" id="about">About</a>
+    <a href="privacy.html" id="privacy">Privacy Policy</a>
+
+    <footer>&copy; 2026 TOGOL</footer>
+
+<script>
+function search(){
+    const q = document.getElementById("query").value.trim();
+
+    if(q === ""){
+        alert("Please enter something to search");
+        return;
+    }
+
+    // For now redirect to Google
+    window.location.href = 
+        "https://www.google.com/search?q=" + encodeURIComponent(q);
+}
+</script>
+
 </body>
 </html>
