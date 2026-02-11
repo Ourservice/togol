@@ -1,21 +1,14 @@
 * {
-    margin:0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.first {
-    color: blue;
-}
-.second {
-    color: red;
-}
-.third {
-    color: green;
-}
-.fourth {
-    color: yellow;
-}
-.fifth {
-    color: purple;
-}
+
+.first { color: blue; }
+.second { color: red; }
+.third { color: green; }
+.fourth { color: yellow; }
+.fifth { color: purple; }
+
 .logo {
     position: fixed;
     top: 10px;
@@ -31,27 +24,31 @@
     align-items: center;
     justify-content: center;
 }
+
 h1::selection {
     background-color: black;
     color: white;
 }
-h1{
+
+h1 {
     font-size: 60px;
     text-align: center;
+    margin-top: 120px;
 }
+
+/* search input */
 input {
-    margin: 20px auto;
     padding: 10px;
     font-size: 16px;
-    display: block;
-    width: 200px;
-    left:50%;
-    top: 40%;
     position: absolute;
+    left: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
-    width:20rem;
+    width: 20rem;
 }
+
+/* main search button */
 button {
     position: absolute;
     padding: 10px 20px;
@@ -61,33 +58,39 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    left:820px;
-    top:40%;
+
+    left: 50%;
+    top: 47%;
+    transform: translate(-50%, -50%);
 }
+
 #example {
     position: absolute;
     font-size: 24px;
     font-weight: bold;
-    color:black;
+    color: black;
     background-color: #d5e1ec;
-    top:53%;
-    left:50%;
+
+    top: 55%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #lan {
     position: absolute;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    display: inline-block;
 }
+
 #english {
     color: blue;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -98,21 +101,38 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/* About link – fixed duplicate values */
 #about {
     position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
+    left: 30px;
+    top: 30px;
+    color: black;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    left:30px;
-    top:30px;
 }
+
 #about:hover {
     text-decoration: underline;
 }
+
+#privacy {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#privacy:hover {
+    text-decoration: underline;
+}
+
+/* Privacy page styles (kept as you wrote) */
+
 .privacy-content {
     max-width: 900px;
     margin: 40px auto;
@@ -120,45 +140,40 @@ footer {
     line-height: 1.6;
     margin-bottom: 100px;
 }
+
 .privacy-content h1 {
     font-size: 48px;
     color: blue;
     margin-bottom: 10px;
     text-align: center;
 }
+
 .privacy-content h2 {
     color: blue;
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 24px;
 }
+
 .privacy-content p {
     margin-bottom: 15px;
     font-size: 16px;
 }
+
 .privacy-content ul {
     margin-left: 20px;
     margin-bottom: 15px;
 }
+
 .privacy-content li {
     margin-bottom: 10px;
 }
+
 .privacy-content a {
     color: blue;
     text-decoration: none;
 }
+
 .privacy-content a:hover {
     text-decoration: underline;
-}
-#privacy {
-    position: absolute;
-    top: 20px;
-    left: 60px;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-}
-#privacy:hover {
-    text-decoration: underline;
-}
+    }
