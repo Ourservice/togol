@@ -71,9 +71,6 @@ button {
     left:50%;
     transform: translate(-50%, -50%);
 }
-#example:hover {
-    border-color: blue;
-}
 #lan {
     position: absolute;
     top: 70%;
